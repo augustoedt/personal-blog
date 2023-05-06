@@ -1,0 +1,92 @@
+---
+import GithubIcon from "../icons/GithubIcon.astro";
+import MapPinIcon from "../icons/MapPinIcon.astro";
+---
+
+<a href="https://github.com/augustoedt">
+  <div class="tt-block">
+    <div class="tt-block-shadow">
+      <div class="tt-content flex items-center gap-6">
+        <GithubIcon />
+        <div class="text-sm font-semibold">augustoedt</div>
+      </div>
+    </div>
+    <div class="tt-text">
+      <div class="flex">
+        <div class="flex flex-col">
+          <div class="inline-flex h-10 w-10">
+            <img
+              class="object-scale-down rounded-full"
+              src="https://avatars.githubusercontent.com/u/7410662?v=4"
+              alt=""
+            />
+          </div>
+          <div
+            class="mt-2 text-fuchsia-700 text-center text-xs uppercase font-bold border-fuchsia-700 border-2 rounded-lg"
+          >
+            pro
+          </div>
+        </div>
+
+        <div class="ml-3 flex flex-col justify-items-start gap-2">
+          <div class="flex items-center gap-3 text-sm whitespace-nowrap">
+            <div class="text-start">Augusto Eduardo</div>
+            <div
+              class="text-sm text-gray-500 group-hover:text-gray-300 transition ease-in-out duration-150"
+            >
+              augustoedt
+            </div>
+          </div>
+          <div>
+            <div class="text-sm text-gray-600">
+              Software Enginner | Full-stack developer | Typescript/Node &
+              Flutter/Kotlin
+            </div>
+          </div>
+          <div class="flex gap-2 items-center">
+            <MapPinIcon />
+            <div class="text-sm text-gray-500">São Paulo, Brazil</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+
+<style>
+  .tt-block {
+    @apply inline-block relative my-6;
+  }
+
+  .tt-content {
+    background-color: #d6d6d6;
+    @apply cursor-pointer px-4 py-2 border-2 border-black text-sm text-gray-800;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .tt-content:hover {
+    transform: translate(-3px, -3px);
+  }
+
+  .tt-block-shadow:hover {
+    @apply bg-black;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .tt-text {
+    background-color: #d6d6d6;
+    @apply border-black border-2 hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/3 mt-2 py-2 px-4 text-gray-700;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .tt-text {
+    position: absolute;
+  }
+  .tt-block:hover .tt-text {
+    display: block;
+  }
+
+  .tt-block:focus .tt-text {
+    display: block;
+  }
+</style>

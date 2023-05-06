@@ -1,0 +1,73 @@
+---
+import TwitterIcon from "../icons/TwitterIcon.astro";
+---
+
+<style>
+  .tt-block {
+    @apply inline-block relative my-6;
+  }
+
+  .tt-content {
+    background-color: #d6d6d6;
+    @apply cursor-pointer px-4 py-2 border-2 border-black text-sm text-gray-700 hover:bg-gray-200;
+  }
+
+  .tt-text {
+    background-color: #d6d6d6;
+    @apply border-black border-2 hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/4 mt-2 py-2 px-4 text-gray-700;
+  }
+
+  .tt-content:hover {
+    background-color: #d6d6d6;
+    transform: translate(-3px, -3px);
+  }
+
+  .tt-block-shadow:hover {
+    @apply bg-black;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .tt-text {
+    position: absolute;
+  }
+  .tt-block:hover .tt-text {
+    display: block;
+  }
+
+  .tt-block:focus .tt-text {
+    display: block;
+  }
+</style>
+
+<a href="https://twitter.com/augustoedt">
+  <div class="tt-block">
+    <div class="tt-block-shadow">
+      <div class="tt-content flex items-center gap-2">
+        <TwitterIcon />
+        <div class="text-xs font-semibold uppercase">github</div>
+      </div>
+    </div>
+
+    <div class="tt-text">
+      <div class="flex items-center">
+        <div class="inline-flex h-10 w-10">
+          <img
+            class="object-scale-down rounded-full"
+            src="https://avatars.githubusercontent.com/u/7410662?v=4"
+            alt=""
+          />
+        </div>
+        <div class="ml-3">
+          <p class="text-base leading-6 font-medium whitespace-nowrap">
+            Augusto Eduardo
+          </p>
+          <p
+            class="text-md leading-5 font-medium text-gray-500 group-hover:text-gray-300 transition ease-in-out duration-150"
+          >
+            @augustoedt
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
