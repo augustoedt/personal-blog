@@ -12,21 +12,30 @@ import { SITE_DESCRIPTION,SITE_TITLE } from "../consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="h-screen flex flex-col">
+  <body>
     <Header />
-    <main class="container justify-center h-full mx-auto max-w-lg">
-      <div class="">
-        <h1>🧑‍🚀 Augusto Eduardo Torres</h1>
-        <div class="flex gap-4 items-center">
-          <GithubLink />
-          <TwitterLink />
-        </div>
+    <main>
+      <div class="dev">🧑‍🚀 Augusto Eduardo Torres</div>
+      <div class="mas">Desenvoledor Full-Stack</div>
+      <div class="my-links">
+        <GithubLink />
+        <TwitterLink />
       </div>
     </main>
     <Footer />
     <style is:global>
+
+      .dev {
+        margin-bottom: 1em;
+        padding: 0;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      
       body {
-        background-color: #d6d6d6;
+        width: 100%;
+        padding: 0 2rem;
       }
     </style>
   </body>

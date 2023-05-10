@@ -14,7 +14,7 @@ import TwitterIcon from "../icons/TwitterIcon.astro";
 
   .tt-text {
     background-color: #d6d6d6;
-    @apply border-black border-2 hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/4 mt-2 py-2 px-4 text-gray-700;
+    @apply border-black border-2 hidden group-hover:block absolute top-full left-1/2 transform -translate-x-1/4 mt-2 p-0 text-gray-700;
   }
 
   .tt-content:hover {
@@ -42,14 +42,14 @@ import TwitterIcon from "../icons/TwitterIcon.astro";
 <a href="https://twitter.com/augustoedt">
   <div class="tt-block">
     <div class="tt-block-shadow">
-      <div class="tt-content flex items-center gap-2">
+      <div class="tt-content flex items-center gap-6">
         <TwitterIcon />
-        <div class="text-xs font-semibold uppercase">github</div>
+        <div class="text-xs font-semibold uppercase">Twitter</div>
       </div>
     </div>
 
     <div class="tt-text">
-      <div class="flex items-center">
+      <div class="block px-4 py-2 min-w-[320px]">
         <div class="inline-flex h-10 w-10">
           <img
             class="object-scale-down rounded-full"
@@ -57,15 +57,11 @@ import TwitterIcon from "../icons/TwitterIcon.astro";
             alt=""
           />
         </div>
-        <div class="ml-3">
-          <p class="text-base leading-6 font-medium whitespace-nowrap">
-            Augusto Eduardo
-          </p>
-          <p
-            class="text-md leading-5 font-medium text-gray-500 group-hover:text-gray-300 transition ease-in-out duration-150"
-          >
-            @augustoedt
-          </p>
+        <p class="text-base font-medium whitespace-nowrap">Augusto Eduardo</p>
+        <p class="text-md font-medium text-gray-500">@augustoedt</p>
+        <div class="mt-2">
+          Dev - self taught web developer. Interested in Python | Rust | Flutter
+          | Typescript | IndieGames topics
         </div>
       </div>
     </div>
