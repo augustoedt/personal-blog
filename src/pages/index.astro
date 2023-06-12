@@ -16,7 +16,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
     <Header />
     <main>
       <div class="dev">🧑‍🚀 Augusto Eduardo Torres</div>
-      <div>Desenvoledor Full-Stack</div>
+      <div class="dev-position">Full Stack Developer</div>
       <div class="my-links">
         <GithubLink />
         <TwitterLink />
@@ -28,8 +28,12 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
         margin-bottom: 1em;
         padding: 0;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 24px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .dev-position {
+        font-weight: 600;
       }
 
       body {
@@ -38,7 +42,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
         height: 100vh;
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
       }
 
       main {
