@@ -16,6 +16,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <style>
       main {
         max-width: 720px;
+        flex-grow: 1;
       }
 
       .title {
@@ -44,7 +45,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         width: 100%;
         padding: 0 2rem;
         height: 100vh;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
       }
     </style>
   </head>
@@ -69,6 +71,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         <slot />
       </article>
     </main>
-    <Footer />  
+    <Footer />
   </body>
 </html>
